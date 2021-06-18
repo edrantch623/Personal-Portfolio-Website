@@ -1,14 +1,37 @@
 * {
     color: white;
-    background-color: black;
     font-family:'Times New Roman', Times, serif;
 }
 
-/*
+body {
+    background-color: black;
+}
+
 .navbar {
+    background-color: goldenrod;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    font-size: 2em;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 
 }
-*/
+
+.navbar li:hover {
+    background-color: #111;
+  }
+
 
 /*
 .project-list {
