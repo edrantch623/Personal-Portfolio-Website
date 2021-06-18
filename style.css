@@ -15,6 +15,29 @@ body {
 
 }
 
+
+h2 {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.about-me p {
+    max-width: 60%;
+}
+
+.skills p {
+    margin: 0;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+.image {
+    float: right;
+}
+
 .navbar {
     background-color: goldenrod;
 }
@@ -29,7 +52,7 @@ body {
 .navbar li {
     font-size: 2em;
     float: right;
-    display: block;
+    display: flex;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -38,11 +61,17 @@ body {
 
 .navbar li:hover {
     background-color: #111;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
   }
 
 
 .project-list li a:hover {
     background-color: goldenrod;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
 
 }
 
@@ -64,7 +93,6 @@ body {
 }
 
 footer {
-    display: flex;
     text-align: center;
     font-size: 1.5em;
 }
