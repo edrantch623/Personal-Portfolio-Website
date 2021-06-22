@@ -34,9 +34,18 @@ h2 {
     border-color: white;
 }
 
-.image {
-    float: right;
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
 }
+}
+
+/*.image {
+ 
+}
+*/
 
 .navbar {
     background-color: goldenrod;
