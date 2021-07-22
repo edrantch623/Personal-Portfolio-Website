@@ -47,6 +47,15 @@ h2 {
 }
 */
 
+.dark-mode {
+    padding: 5px;
+    max-width: 200px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+
+}
+
 .navbar {
     background-color: goldenrod;
 }
