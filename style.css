@@ -101,7 +101,28 @@ h2 {
     padding: 20px;
 }
 
+.fa-github:hover , .fa-linkedin:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+/* Footer */ 
+
 footer {
     text-align: center;
     font-size: 1.5em;
+}
+
+/* Size for smaller screens*/
+
+@media screen and (max-width: 968px) {
+    .image {
+        width: 70%; 
+        height: 70%;
+    }
+
+    body {
+        font-size: 0.85em;
+    }
 }
