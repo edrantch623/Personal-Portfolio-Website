@@ -17,6 +17,14 @@
 
 <body>
     <nav class="navbar">
+      <div>
+        <div id="loading"></div>
+        <div id="showOutput">
+          <p>Minneapolis</p>
+          <img id="weatherImage">
+          <p><span id="temp"></span> Degrees</p>
+        </div>
+      </div>
       <ul>
         <li>About Me</li>
         <li>Skills</li>
@@ -28,13 +36,6 @@
   <h1>Evan Drantch</h1>
 
     <button onclick="darkMode()" class="dark-mode-button">Click Me to Toggle Dark Mode</button>
-
-    <script>
-      function darkMode() {
-         var element = document.body;
-         element.classList.toggle("dark-mode");
-      }
-      </script>
 
     <div class="flex">
       <section class="about-me">
@@ -80,7 +81,31 @@
 
     </section>
 
+    <script>
+      //Dark Mode Toggle
+      function darkMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
 
+      // For API
+      const weatherURL = "https://api.weather.gov/gridpoints/MPX/108,72/forecast"
+
+      const temp = document.querySelector("#temp")
+      const image = document.querySelector("#weatherImage")
+
+      fetch(weatherURL)
+        .then(response => response.json())
+        .then(json => {
+          const today = json.properties.periods[0]
+          console.log(today)  
+          //hideLoading()
+            //textOutput.innerText = json.contents.translated;
+          temp.innerText = today.temperature
+          image.src = today.icon
+        })
+
+      </script>
 
 
 
