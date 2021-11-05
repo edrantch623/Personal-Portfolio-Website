@@ -11,4 +11,4 @@ Tools Used:
 -CSS
 -Javascript
 -Git and Github
--WeatherURL API
+-API connected to Weather.Gov
